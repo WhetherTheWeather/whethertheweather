@@ -1,0 +1,256 @@
+<head>
+  <link rel = "stylesheet" type="text/css" href = "style.css">
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <div id= "banner">
+    <img id="logo" src="assets/imgs/logo2.png">
+    <div class="nav">
+      <a href=""><p>Home</p></a>
+      <a href="#week"><p>Daily forcast</p></a>
+      <a href="#pop"> <p>Popular cities</p></a>
+    </div>
+  </div>
+  <header>
+
+    
+
+    <h1 class=" heading-2">Current Weather</h1>
+    <hr>
+    <!-- Search bar  -->
+    <div id="search">
+      <input class="search-bar" id="getInput" type = "text" placeholder="Search for city"></input>
+      <button class="search-button" id="getWeather" type="submit">Search</button>
+    </div>
+
+    <div class="current">
+      <div class="basic">
+        <h1 class="basicName"></h1>
+        <img class="basicIcon">
+        <h2 class="basicDescription"></h2>
+        <h2 class="basicTempMax"></h2>
+        <h2 class="basicTempMin"></h2>
+      </div>
+      <!--Default Output End-->
+      <h1 class="name"></h1>
+      <img class="icon">
+      <h2 class="description"></h2>
+      <h2 class="temp_max"></h1>
+      <h2 class="temp_min"></h1>
+    </div>
+
+  </header>
+
+  <div id= "clouds">
+
+
+    <div class="weekly" id="week">
+      <!-- header-weekly -->
+      <h1 class=" heading-3">Weather for the next seven days</h1>
+
+      <hr class="weekly-hr">
+
+      <!--New Code 2: Added search bars-->
+      <div class="lon-lat">
+      <input id="lat" type="text" placeholder="Latitude">
+      <input id="lon" type="text" placeholder="Longitude">
+      <button id="getWeekly" type="submit">Search</button>
+    </div>
+      <!--End of New Code 2-->
+      <!--Default Weekly Output Start-->
+      <div class="rudiment">
+
+        <!-- <h2>Seven day forecast for Cape Town</h2> -->
+
+        <div class="one every-day">
+          <div class="overlay">
+            <H1 class="days-heading">Day 1</H1>
+            <img class="oneIcon icons">
+            <div class="oneHumidity hmd"></div>
+            <div class="oneTempMin minT"></div>
+            <div class="oneTempMax maxT"></div>
+          </div>
+        </div>
+        <div class="two everyday">
+          <div class="overlay">
+            <H1 class="days-heading">Day 2</H1>
+            <img class="twoIcon icons">
+            <div class="twoHumidity  hmd"></div>
+            <div class="twoTempMin minT"></div>
+            <div class="twoTempMax maxT"></div>
+          </div>
+        </div>
+        <div class="three every-day">
+          <div class="overlay">
+            <H1 class="days-heading">Day 3</H1>
+            <img class="threeIcon icons">
+            <div class="threeHumidity  hmd"></div>
+            <div class="threeTempMin minT"></div>
+            <div class="threeTempMax maxT"></div>
+          </div>
+        </div>
+        <div class="four everyday">
+          <div class="overlay">
+            <H1 class="days-heading">Day 4</H1>
+            <img class="fourIcon icons">
+            <div class="fourHumidity  hmd"></div>
+            <div class="fourTempMin minT"></div>
+            <div class="fourTempMax maxT"></div>
+          </div>
+        </div>
+
+        <div class="five every-day">
+          <div class="overlay">
+            <H1 class="days-heading">Day 5</H1>
+            <img class="fiveIcon icons">
+            <div class="fiveHumidity  hmd"></div>
+            <div class="fiveTempMin minT"></div>
+            <div class="fiveTempMax maxT"></div>
+          </div>
+        </div>
+
+        <div class="six everyday">
+          <div class="overlay">
+            <H1 class="days-heading">Day 6</H1>
+            <img class="sixIcon icons">
+            <div class="sixHumidity  hmd"></div>
+            <div class="sixTempMin minT"></div>
+            <div class="sixTempMax maxT"></div>
+          </div>
+        </div>
+        <div class="seven every-day">
+          <div class="overlay">
+            <H1 class="days-heading">Day 7</H1>
+            <img class="sevenIcon icons">
+            <div class="sevenHumidity  hmd"></div>
+            <div class="sevenTempMin minT"></div>
+            <div class="sevenTempMax"></div>
+            <div class="sunTempMax maxT"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--Default Weekly Output End-->
+      <div class="monday day">
+        <img class="monIcon">
+        <div class="monHumidity"></div>
+        <div class="monTempMin"></div>
+        <div class="monTempMax"></div>
+      </div>
+      <div class="tuesday day ">
+        <img class="tuesIcon">
+        <div class="tuesHumidity"></div>
+        <div class="tuesTempMin"></div>
+        <div class="tuesTempMax"></div>
+      </div>
+      <div class="wednesday day ">
+        <img class="wedIcon">
+        <div class="wedHumidity"></div>
+        <div class="wedTempMin"></div>
+        <div class="wedTempMax"></div>
+      </div>
+      <div class="thurday day ">
+        <img class="thursIcon">
+        <div class="thursHumidity"></div>
+        <div class="thursTempMin"></div>
+        <div class="thursTempMax"></div>
+      </div>
+      <div class="friday day ">
+        <img class="friIcon">
+        <div class="friHumidity"></div>
+        <div class="friTempMin"></div>
+        <div class="friTempMax"></div>
+      </div>
+      <div class="saturday day ">
+        <img class="satIcon">
+        <div class="satHumidity"></div>
+        <div class="satTempMin"></div>
+        <div class="satTempMax"></div>
+      </div>
+      <div class="sunday day ">
+        <img class="sunIcon">
+        <div class="sunHumidity"></div>
+        <div class="sunTempMin"></div>
+        <!-- <div class="sunTempMax"></div> -->
+      </div>
+      
+    </div>
+  </div>
+  <div class="popular" id="pop">
+    <h1 class="heading-2">Popular Cities</h1>
+    <hr> 
+    <div class="popular-2">
+    <div class="cape town pop-style1">
+      <div class="overlay-2">
+        <div class="text">
+      <h1 class="capeTown_name"></h1>
+      <img class="capeTown_icon">
+      <h2 class="capeTown_description"></h2>
+      <h2 class="capeTown_temp_max"></h1>
+      <h2 class="capeTown_temp_min"></h1>
+        <button class="button" style="vertical-align:middle"><span>Show more </span></button>
+
+    </div>
+  </div>
+  </div>
+    <div class="durban pop-style2">
+      <div class="overlay-2">
+        <div class="text">
+      <h1 class="durban_name"></h1>
+      <img class="durban_icon">
+      <h2 class="durban_description"></h2>
+      <h2 class="durban_temp_max"></h1>
+      <h2 class="durban_temp_min"></h1>
+        <button class="button" style="vertical-align:middle"><span>Show more </span></button>
+    </div>
+  </div>
+</div>
+    <div class="joburg pop-style3">
+      <div class="overlay-2">
+        <div class="text">
+      <h1 class="joburg_name"></h1>
+      <img class="joburg_icon">
+      <h2 class="joburg_description"></h2>
+      <h2 class="joburg_temp_max"></h1>
+      <h2 class="joburg_temp_min"></h1>
+        <button class="button" style="vertical-align:middle"><span>Show more </span></button>
+    </div>
+
+  </div>
+  </div>
+    <div class="pretoria pop-style4">
+      <div class="overlay-2">
+        <div class="text">
+      <h1 class="pretoria_name"></h1>
+      <img class="pretoria_icon">
+      <h2 class="pretoria_description"></h2>
+      <h2 class="pretoria_temp_max"></h1>
+      <h2 class="pretoria_temp_min"></h1>
+        <button class="button" style="vertical-align:middle"><span>Show more </span></button>
+    </div>
+  </div>
+</div>
+    <div class="port-elizabeth pop-style5">
+      <div class="overlay-2">
+        <div class="text">
+      <h1 class="pe_name"></h1>
+      <img class="pe_icon">
+      <h2 class="pe_description"></h2>
+      <h2 class="pe_temp_max"></h1>
+      <h2 class="pe_temp_min"></h1>
+        <button class="button" style="vertical-align:middle"><span>Show more </span></button>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+  <div class="map">
+  </div>
+
+  <div id="contact"></div>
+</body>
+
+
+
+<script type="text/javascript" src="jquery-3.5.1.js"></script>
+<script src="script.js"></script>
